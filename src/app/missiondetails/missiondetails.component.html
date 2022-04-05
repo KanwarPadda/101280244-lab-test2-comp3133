@@ -1,0 +1,33 @@
+
+    <table class="table-responsive">
+      <tr>
+        <th><img src="{{ mission.links.mission_patch_small }}" class=".img-fluid. max-width: 100%;"></th>
+
+      <th><h1>Mission Details</h1>
+      <p>
+        Mission Name: {{ mission.mission_name }}
+      </p>
+      <p>
+        Launch Year: {{ mission.launch_year }}
+      </p>
+      <p>
+        Launch Date & Time in UTC: {{ mission.launch_date_utc }}
+      </p>
+      <p>
+          Rocket Name: {{ mission.rocket.rocket_name }}
+      </p>
+      <p>
+          Rocket type: {{ mission.rocket.rocket_type }}
+      </p>
+      <p>
+          Launch Site : {{ mission.launch_site.site_name }}
+      </p>
+      <div>
+         <p> Details: {{ mission.details }}</p>
+      </div>
+      <p>
+          Launch success: {{ mission.launch_success }}
+      </p>
+
+      <button mat-stroked-button color="primary" [routerLink]="['/']" >Back Home</button>
+    </th>

@@ -1,0 +1,30 @@
+img
+{
+  width:100%;
+  height: 100%;
+}
+table:first-child{
+  width: 100%;
+}
+table{
+  width: 100%;
+
+}
+table, th {
+  border: 1px solid black;
+}
+th:first-child{
+  width: 20%;
+}
+
+p{
+  font: 2em sans-serif;
+}
+button{
+font-size: 2em;
+}
+h1{
+  font-size: 3em;
+}
+
+

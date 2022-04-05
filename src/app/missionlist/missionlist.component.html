@@ -1,0 +1,21 @@
+<div >
+  <div >
+      <div *ngFor="let mission of missions">
+        <table>
+          <tr>
+            <th><img src="{{ mission.links.mission_patch_small }}" alt="Image Not Available" ></th>
+            <th><h1 >{{ mission.mission_name }}</h1>
+              <h2 >{{ mission.launch_year }}</h2>
+
+                <p> <strong>Details: </strong>{{ mission.details }}</p>
+
+              <button [routerLink]="['/mission', mission.flight_number]" class="">Mission Details</button></th>
+
+          </tr>
+          <div>
+
+
+          </div>
+
+
+
